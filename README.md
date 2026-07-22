@@ -14,6 +14,7 @@ repos so QR and print assets stay cleanly tracked on their own.
 | `qr/iceberg-qr.svg` | Vector QR code — use for print / large format (scales with no quality loss) |
 | `qr/iceberg-qr-print-15cm-300dpi.png` | Print-ready raster, 15 cm @ 300 DPI — raster fallback for print workflows |
 | `PRINT-GUIDE.md` | Roll-up banner sizing & placement spec to hand the printer |
+| `brochure/` | Print-ready A4 booth brochure (PDF + PNG) that embeds the QR — see `brochure/README.md` |
 | `scripts/generate_qr.py` | Regenerates all QR codes from a single source URL |
 
 ## The URL
