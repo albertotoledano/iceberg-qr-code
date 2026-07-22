@@ -17,8 +17,9 @@ nuestro sitio web").
 - Iceberg logo + `iceberg-refrigeration.com`
 - Headline: refrigeración comercial e industrial para Latinoamérica y el Caribe
 - Trust line: exclusivos de Keeprite · +32 países · +500 proyectos
-- Product lines: unidades condensadoras, compresores, evaporadores, chillers,
-  máquinas de hielo, repuestos
+- Product lines (with specs): unidades condensadoras (1–100 H.P), evaporadores
+  (bajo/medio/alto perfil), chillers, compresores (1/3–150 H.P, nuevos
+  semiherméticos y scroll + repuestos), máquinas de hielo (60–40,000 lb/24 h)
 - QR panel: "Escanea el código y visita nuestro sitio web" + value props
 - Footer: WhatsApp, teléfono, email
 

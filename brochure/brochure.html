@@ -345,23 +345,28 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.08}
 .trust .dot{width:2.2mm;height:2.2mm;border-radius:50%;background:var(--blue2);flex:none;box-shadow:0 0 0 1.4mm rgba(0,180,230,.18)}
 
 /* Products */
-.sec{padding:6.5mm 14mm 0}
+.sec{padding:4.5mm 14mm 0}
 .sec .lbl{font-family:var(--disp);font-weight:700;font-size:14pt;color:var(--navy)}
 .sec .lbl small{display:block;font-family:var(--font);font-weight:500;font-size:9.5pt;color:var(--muted);margin-top:1mm;letter-spacing:0}
-.prods{display:grid;grid-template-columns:repeat(3,1fr);gap:4mm;margin-top:5mm}
-.prod{display:flex;gap:3.2mm;align-items:center;border:1px solid var(--line);border-radius:3.5mm;padding:4mm;background:var(--ice2)}
-.prod .pic{width:11mm;height:11mm;border-radius:2.6mm;flex:none;display:flex;align-items:center;justify-content:center;
+.prods{display:grid;grid-template-columns:1fr 1fr;gap:5mm;margin-top:4mm;align-items:start}
+.col{display:flex;flex-direction:column;gap:3mm}
+.prod{border:1px solid var(--line);border-radius:3.5mm;padding:3.6mm 4.5mm;background:var(--ice2)}
+.prod .ph{display:flex;gap:3mm;align-items:center;margin-bottom:1.8mm}
+.prod .pic{width:9.5mm;height:9.5mm;border-radius:2.4mm;flex:none;display:flex;align-items:center;justify-content:center;
   background:linear-gradient(135deg,var(--blue),var(--blue2))}
-.prod .pic svg{width:6mm;height:6mm;color:#fff}
-.prod b{display:block;font-size:10pt;color:var(--navy);font-family:var(--disp);font-weight:700;line-height:1.15}
-.prod span{font-size:8.3pt;color:var(--muted);line-height:1.3;display:block;margin-top:.6mm}
+.prod .pic svg{width:5.2mm;height:5.2mm;color:#fff}
+.prod b{font-size:11pt;color:var(--navy);font-family:var(--disp);font-weight:700;line-height:1.12}
+.prod .d{font-size:8.8pt;color:var(--muted);line-height:1.35;display:block}
+.prod .bl{list-style:none;margin-top:2.6mm;display:flex;flex-direction:column;gap:1.6mm}
+.prod .bl li{display:flex;gap:2.4mm;align-items:flex-start;font-size:8.8pt;color:var(--navy);line-height:1.3}
+.prod .bl .bd{width:1.8mm;height:1.8mm;border-radius:50%;background:var(--blue);flex:none;margin-top:1.4mm}
 
 /* QR call-to-action */
-.cta{margin:5mm 14mm 0;border-radius:5mm;border:1px solid var(--line);overflow:hidden;display:grid;grid-template-columns:1fr auto;
+.cta{margin:4mm 14mm 0;border-radius:5mm;border:1px solid var(--line);overflow:hidden;display:grid;grid-template-columns:1fr auto;
   background:linear-gradient(135deg,var(--ice),#fff)}
-.cta .l{padding:7mm 9mm 6mm}
+.cta .l{padding:6mm 9mm 5mm}
 .cta .l .ey{font-size:8.5pt;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:var(--blue)}
-.cta .l h2{font-size:19pt;color:var(--navy);font-weight:800;margin:2.5mm 0 4mm;max-width:96mm}
+.cta .l h2{font-size:18pt;color:var(--navy);font-weight:800;margin:2mm 0 3.5mm;max-width:96mm}
 .cta ul{list-style:none;display:flex;flex-direction:column;gap:2.6mm}
 .cta li{display:flex;gap:2.6mm;align-items:flex-start}
 .cta .vk{width:5.4mm;height:5.4mm;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;
@@ -369,11 +374,11 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.08}
 .cta .vk svg{width:3.4mm;height:3.4mm;color:var(--blue);stroke-width:3}
 .cta li b{display:block;font-size:9.8pt;color:var(--navy);font-family:var(--disp);font-weight:700}
 .cta li span{font-size:8.6pt;color:var(--muted);display:block;line-height:1.3}
-.cta .r{background:linear-gradient(160deg,#0e3a63,#0A2540);color:#fff;padding:8mm 9mm;display:flex;
+.cta .r{background:linear-gradient(160deg,#0e3a63,#0A2540);color:#fff;padding:6mm 9mm;display:flex;
   flex-direction:column;align-items:center;justify-content:center;text-align:center;width:74mm}
-.cta .r .qbox{background:#fff;padding:4mm;border-radius:3.5mm;box-shadow:0 6mm 16mm rgba(0,0,0,.28)}
-.cta .r .qbox img{width:40mm;height:40mm;display:block}
-.cta .r .scan{font-size:8.5pt;letter-spacing:.13em;text-transform:uppercase;color:#8fb4cf;font-weight:700;margin-top:5mm}
+.cta .r .qbox{background:#fff;padding:3.6mm;border-radius:3.5mm;box-shadow:0 6mm 16mm rgba(0,0,0,.28)}
+.cta .r .qbox img{width:36mm;height:36mm;display:block}
+.cta .r .scan{font-size:8.5pt;letter-spacing:.13em;text-transform:uppercase;color:#8fb4cf;font-weight:700;margin-top:4mm}
 .cta .r .url{font-family:var(--disp);font-weight:800;font-size:12.5pt;color:#fff;margin-top:1.5mm}
 
 /* Footer contact */
@@ -409,12 +414,11 @@ h1,h2,h3{font-family:var(--disp);letter-spacing:-.02em;line-height:1.08}
   <div class="sec">
     <div class="lbl">Nuestras líneas<small>Equipos y repuestos listos para tu operación</small></div>
     <div class="prods">
-      <div class="prod"><div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M7 15h4"/></svg></div><div class="pmeta"><b>Unidades condensadoras</b><span>Baja, media y alta temperatura</span></div></div>
-<div class="prod"><div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/></svg></div><div class="pmeta"><b>Compresores</b><span>Semi-herméticos, scroll y repuestos de compresores</span></div></div>
-<div class="prod"><div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 6v12M10 6v12M14 6v12M18 6v12"/></svg></div><div class="pmeta"><b>Evaporadores</b><span>Cámaras frías y refrigeración comercial</span></div></div>
-<div class="prod"><div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg></div><div class="pmeta"><b>Chillers</b><span>Enfriamiento de proceso e industrial</span></div></div>
-<div class="prod"><div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 3.4L18 5.5l-1 4 4 .8-3.4 1.9L20 15l-4-.8.8 4-2.8-2.5L11 18l.6-4L8 15l1.5-3.4L6 9.5l4-.6-.6-4 2.9 2.5z"/></svg></div><div class="pmeta"><b>Máquinas de hielo</b><span>Comerciales e industriales</span></div></div>
-<div class="prod"><div class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 00-5.4 5l-6 6a1.5 1.5 0 002 2l6-6a4 4 0 005-5.4l-2.7 2.7-2-2z"/></svg></div><div class="pmeta"><b>Repuestos y partes</b><span>Amplio inventario y entrega ágil</span></div></div>
+      <div class="col"><div class="prod"><div class="ph"><span class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span><b>Unidades condensadoras</b></div><span class="d">De 1 H.P a 100 H.P para aplicaciones en baja, media y alta temperatura.</span></div>
+<div class="prod"><div class="ph"><span class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 6v12M10 6v12M14 6v12M18 6v12"/></svg></span><b>Evaporadores</b></div><span class="d">De bajo, medio y alto perfil para aplicaciones en baja, media y alta temperatura.</span></div>
+<div class="prod"><div class="ph"><span class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg></span><b>Chillers</b></div><span class="d">Gran variedad de chillers para cualquier aplicación dentro de la industria de la refrigeración.</span></div></div>
+      <div class="col"><div class="prod"><div class="ph"><span class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/></svg></span><b>Compresores</b></div><span class="d">Compresores completamente nuevos, semiherméticos y scroll.</span><ul class="bl"><li><span class="bd"></span>De 1/3 H.P hasta 150 H.P</li><li><span class="bd"></span>Baja, media y alta temperatura</li><li><span class="bd"></span>Partes y repuestos de compresores</li></ul></div>
+<div class="prod"><div class="ph"><span class="pic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 3.4L18 5.5l-1 4 4 .8-3.4 1.9L20 15l-4-.8.8 4-2.8-2.5L11 18l.6-4L8 15l1.5-3.4L6 9.5l4-.6-.6-4 2.9 2.5z"/></svg></span><b>Máquinas de hielo</b></div><span class="d">Máquinas de producción de hielo:</span><ul class="bl"><li><span class="bd"></span>De 60 lb a 40,000 lb en 24 horas</li><li><span class="bd"></span>En cubos, escamas o frapé</li><li><span class="bd"></span>Autocontenidas o remotas</li></ul></div></div>
     </div>
   </div>
 
